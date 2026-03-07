@@ -1,17 +1,41 @@
-public class Main {
 
-    public static void main(String[] args) {
 
-        AVL tree = new AVL();
+/*
+        50
+       /  \
+     30    70
+    / \    / \
+   20 40  60 80
+  / \
+ 10  21
+  \
+   15
+ */
+public class Main{
 
-        tree.root = tree.insert(tree.root, 30);
-        tree.root = tree.insert(tree.root, 20);
-        tree.root = tree.insert(tree.root, 40);
-        tree.root = tree.insert(tree.root, 10);
-        tree.root = tree.insert(tree.root, 25);
+    public static void  main(String[] args){
 
-        System.out.println("Inorder Traversal:");
+        BST bst = new BST();
 
-        tree.inorder(tree.root);
+        System.out.printf("Is the tree empty: %b\n", bst
+                .isEmpty());
+        bst.insert(50);
+        bst.insert(70); bst.insert(70); bst.insert(80); bst.insert(60);
+        bst.insert(30); bst.insert(40); bst.insert(20); bst.insert(10); bst.insert(21);
+        bst.insert(15);
+        bst.insert(13);
+        boolean exist13 = bst.search(13);
+        boolean exists21 = bst.search(21);
+        bst.insert(-2);
+
+        System.out.printf("Is the tree empty: %b\n", bst
+                .isEmpty());
+        System.out.printf("13: %b\n", exist13);
+        System.out.printf("21: %b\n", exists21);
+        System.out.printf("50: %b\n", bst.search(50));
+
+        System.out.printf("Minimum value: %d\n", bst.findMin());
+        System.out.printf("Maximum value: %d\n", bst.findMax());
+
     }
 }

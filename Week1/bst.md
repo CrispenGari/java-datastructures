@@ -15,8 +15,23 @@ Example:
      30    70
     / \    / \
    20 40  60 80
+  / \
+ 10  21
+  \
+   15
 ```
 ---
+
+1. `Parent Node` - is the node where the tree starts, it sometimes called a root node. This is where all operations of a tree originates.
+2. `Child Node` - Any node that is connected to another node above it's hierarch.
+3. `Leaf Nodes` -Nodes that doesn't have root nodes.
+4. `Siblings` - Nodes with the same parent.
+5. `Ancestor` Node - Is a node that has grand children.
+6. `Path` - The sequency of edges from one node to another.
+7. `Distance` - the number of shots edges between two nodes.
+8. `Degree` - A degree of a node is the total number of nodes it has.
+9. `Depth` - the number of edges from the root node to that node. Eg the depth of the root node is 0
+10. `Height` - The number of edges from the deepest leaf to that node.
 
 ### 1. Creating a Tree Node
 
@@ -97,8 +112,8 @@ Search starts from the root.
 
 Steps:
 
-1. If the node is null → value does not exist.
-2. If the node value equals the search value -> return true.
+1. If the node is null - value does not exist.
+2. If the node value equals the search value - return true.
 3. If the value is smaller - search left subtree.
 4. If the value is greater - search right subtree.
 

@@ -12,7 +12,6 @@ class Node {
     }
 }
 
-
 public class BST {
     Node root;
     public BST() {
