@@ -128,8 +128,6 @@ public class RedBlackTree {
 ```
 
 
----
-
 ### 6. Left Rotation
 
 Used to fix imbalance by rotating nodes to the left.
@@ -195,8 +193,6 @@ public class RedBlackTree {
 }
 ```
 
-
----
 
 ### 7. Right Rotation
 
@@ -283,8 +279,6 @@ public class RedBlackTree {
 }
 ```
 
-
----
 
 ### 8. Fixing Violations
 
@@ -426,7 +420,6 @@ public class RedBlackTree {
 ```
 
 
----
 
 ### 9. Search Operation
 
