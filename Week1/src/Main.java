@@ -1,16 +1,6 @@
 
 
-/*
-        50
-       /  \
-     30    70
-    / \    / \
-   20 40  60 80
-  / \
- 10  21
-  \
-   15
- */
+
 public class Main{
 
     public static void  main(String[] args){
@@ -33,7 +23,6 @@ public class Main{
         System.out.printf("13: %b\n", exist13);
         System.out.printf("21: %b\n", exists21);
         System.out.printf("50: %b\n", bst.search(50));
-
         System.out.printf("Minimum value: %d\n", bst.findMin());
         System.out.printf("Maximum value: %d\n", bst.findMax());
 
