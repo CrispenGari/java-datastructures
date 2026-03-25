@@ -2,7 +2,7 @@
 
 A **Red-Black Tree** is a special type of **Binary Search Tree (BST)** that is **self-balancing**, ensuring efficient operations.
 
----
+
 
 ###  1. Definition
 
@@ -12,7 +12,7 @@ A **Red-Black Tree** is a BST where each node has a color (**RED or BLACK**) and
 <img src="rbt.png" alt="rbt" width="100%"/>
 </p>
 
----
+
 
 ###  2. Properties of Red-Black Trees
 
@@ -24,9 +24,8 @@ A **Red-Black Tree** is a BST where each node has a color (**RED or BLACK**) and
 6. The tree remains approximately balanced → height = **O(log n)**
 7. Follows standard **BST ordering rules**
 
----
 
-## 3. Red-Black Tree Node
+### 3. Red-Black Tree Node
 
 Each node stores:
 - value
