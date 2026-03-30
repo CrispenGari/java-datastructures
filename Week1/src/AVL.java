@@ -1,3 +1,21 @@
+
+/*
+
+node: Node{left, right}
+rightRotate(node): Node {
+ int t = node.left;
+ node.left = node.right;
+ node.right = t;
+ return node.fet
+}
+
+
+ */
+
+
+
+
+
 class AVLNode {
     int key;
     int height;
@@ -22,7 +40,7 @@ public class AVL {
     int getBalance(AVLNode node) {
         if (node == null)
             return 0;
-       return height(node.left) - height(node.right);
+       return height(node.left) - height(node.right); // E [-1; 1] 2 -2
     }
     AVLNode rightRotate(AVLNode y) {
         AVLNode x = y.left;
